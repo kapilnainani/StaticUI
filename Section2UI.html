@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .tab {
+            width: 95%;
+            height: 320px;
+        }
+        .tab button {
+            
+            padding: 12px 12px;
+            width: 100%;
+        }
+        .tab button:hover {
+            background-color: rgb(196, 161, 241);
+        }
+        .userButton {
+            margin : 20px 20px 20px 20px;
+        }
+        .table {
+            margin-top : 20px;
+        }
+       
+    </style>
+    <head>
+        <title>UI</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>       
+        <div class="container">
+            <div class="panel-group" id="outerPanel" role="tablist">
+                <div class="panel panel-default">
+                    <div class="panel-heading clearfix" role="tab" id="mainHeading">
+                        <div class="col-lg-10 ">
+                            <h4 class="panel-title text-center" >AppirioDX</h4>
+                        </div>
+                        <div class="col-lg-2 clearfix pull-right">
+                            <div class="btn-group btn-group-xs pull-right bg-secondary border" role="group">
+                                <button type="button" class="btn btn-default">_</button>
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-unchecked"/></button>
+                                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-remove"/></button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="panel " id="innerPanel" role="tab">
+                            <div class="tab clearfix">
+                                <button ><h3 class="pull-left">Tools</h3></button>
+                                <button ><h3 class="pull-left">Services</h3></button>
+                                <button ><h3 class="pull-left">Config</h3></button>
+                                <button ><h3 class="pull-left">Projects</h3></button>
+                            </div>   
+                        </div> 
+                    </div>
+                    <div class="col-lg-10  ">
+                        <div class="userButton">
+                            <span><button type="button" class="btn btn-success pull-left">Accept All</button></span>
+                            <span><button type="button" class="btn btn-warning pull-right">Ignore All</button></span>
+                        </div>
+                        <table class="table table-bordered table-hover pull-left">
+                            <thead>
+                                <tr>
+                                    <th>Setting</th>
+                                    <th>Status</th>
+                                    <th>Recommendation</th>
+                                    <th>Override</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Git*******</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="success">
+                                    <td>> Your Name</td>
+                                    <td>DiXie Developer</td>
+                                    <td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>> Your Email</td>
+                                    <td>code@appirio.com</td>
+                                    <td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="active">
+                                    <td>> Diff Algorithm</td>
+                                    <td>Default</td>
+                                    <td class="text-center"><button type="button" class="btn btn-primary">Change to 'Patience'</button></td>
+                                    <td class="text-center"><button type="button" class="btn btn-warning">Ignore</button></td>
+                                </tr>
+                                <tr>
+                                    <td>VS Code*******</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="success">
+                                    <td>> Trim Trailing WhiteSpace</td>
+                                    <td>False</td>
+                                    <td class="text-center"><button type="button" class="btn btn-primary">Change to True</button></td>
+                                    <td class="text-center"><button type="button" class="btn btn-warning">Ignore</button></td>
+                                </tr>
+                                <tr>
+                                    <td>> Appirio GitLab Token</td>
+                                    <td>**********</td>
+                                    <td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>  
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
